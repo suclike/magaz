@@ -19,7 +19,7 @@
             <?php endif; ?>
           </div>
 
-          <label class='off-canvas-toggle'><span data-icon='ei-navicon' data-size='s'></span></label>
+          <label class='off-canvas-toggle'><span class="genericon genericon-menu off-canvas-toggle__icon"></span></label>
 
           <div class='off-canvas-content'>
 
@@ -53,7 +53,9 @@
 
                 <?php $toggle_search_icon = get_theme_mod( 'toggle_search_icon' ); if ( ! $toggle_search_icon ) : ?>
                   <li>
-                    <div class='toggle-search-button'><span data-icon='ei-search' data-size='s'></span></div>
+                    <div class='toggle-search-button'>
+                      <span class="genericon genericon-search toggle-search-button__icon"></span>
+                    </div>
                   </li>
                 <?php endif; ?>
 

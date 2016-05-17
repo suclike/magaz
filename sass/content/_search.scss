@@ -6,23 +6,27 @@
 
 .toggle-search-button {
   cursor: pointer;
-  margin-left: half(quarter($line-height__base));
+  margin-left: quarter($line-height__base);
   margin-right: auto;
 
-  .icon {
+  &__icon {
+    color: #fff;
+    font-size: $font-size__base;
     vertical-align: middle;
-    fill: #fff;
-
-    .no-header-cover & {
-      fill: $color__type;
-
-      &:hover { fill: $color__type--hover; }
-    }
+    transition: $base-transition-speed;
 
     @media #{$medium-down} {
-      fill: $color__type;
+      color: $color__type;
 
-      &:hover { fill: $color__type--hover; }
+      &:hover { color: $color__type--hover; }
+    }
+  }
+
+  .no-header-cover & {
+    &__icon {
+      color: $color__type;
+
+      &:hover { color: $color__type--hover; }
     }
   }
 }

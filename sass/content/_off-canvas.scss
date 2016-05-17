@@ -7,18 +7,20 @@
 .off-canvas-toggle {
   display: none;
 
+  &__icon { vertical-align: middle; }
+
   @media #{$medium-down} {
     float: right;
     display: block;
-    margin-right: quarter($line-height__base);
+    margin-right: half($line-height__medium);
 
     font-size: $font-size__small;
     cursor: pointer;
 
-    .icon { fill: #fff; }
+    &__icon { color: #fff; }
 
     .no-header-cover & {
-      .icon { fill: $color__type; }
+      &__icon { color: $color__type; }
     }
   }
 }

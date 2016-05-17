@@ -3413,19 +3413,23 @@ img {
   display: none;
 }
 
+.off-canvas-toggle__icon {
+  vertical-align: middle;
+}
+
 @media only screen and (max-width: 40em) {
   .off-canvas-toggle {
     float: right;
     display: block;
-    margin-right: 8px;
+    margin-right: 13px;
     font-size: 14px;
     cursor: pointer;
   }
-  .off-canvas-toggle .icon {
-    fill: #fff;
+  .off-canvas-toggle__icon {
+    color: #fff;
   }
-  .no-header-cover .off-canvas-toggle .icon {
-    fill: #222222;
+  .no-header-cover .off-canvas-toggle__icon {
+    color: #222222;
   }
 }
 
@@ -3692,30 +3696,33 @@ img {
 --------------------------------------------------------------*/
 .toggle-search-button {
   cursor: pointer;
-  margin-left: 4px;
+  margin-left: 8px;
   margin-right: auto;
 }
 
-.toggle-search-button .icon {
+.toggle-search-button__icon {
+  color: #fff;
+  font-size: 19px;
   vertical-align: middle;
-  fill: #fff;
-}
-
-.no-header-cover .toggle-search-button .icon {
-  fill: #222222;
-}
-
-.no-header-cover .toggle-search-button .icon:hover {
-  fill: #7E7E7E;
+  -webkit-transition: 0.4s;
+          transition: 0.4s;
 }
 
 @media only screen and (max-width: 40em) {
-  .toggle-search-button .icon {
-    fill: #222222;
+  .toggle-search-button__icon {
+    color: #222222;
   }
-  .toggle-search-button .icon:hover {
-    fill: #7E7E7E;
+  .toggle-search-button__icon:hover {
+    color: #7E7E7E;
   }
+}
+
+.no-header-cover .toggle-search-button__icon {
+  color: #222222;
+}
+
+.no-header-cover .toggle-search-button__icon:hover {
+  color: #7E7E7E;
 }
 
 .modal-search-container {
