@@ -1,0 +1,176 @@
+//---------------------------
+//
+// Post Page
+//
+//---------------------------
+
+// Add shadow to cover image for all pages except the 'paged' context page for archive pages
+.header-cover {
+  &:after {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  background-color: #34495e;
+}
+
+.header-box {
+  .box {
+    position: relative;
+    background: #fff;
+
+    @media #{$large-up} {
+      min-height: quadruple($line-height__medium);
+    }
+  }
+
+  position: relative;
+  top: -$line-height__base;
+  margin-bottom: -$line-height__base;
+
+  @media #{$medium-up} {
+    top: - double($line-height__base);
+    margin-bottom: -$line-height__base;
+  }
+
+  @media #{$large-up} {
+    top: -($line-height__base * 3);
+    margin-bottom: -($line-height__base * 3);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    z-index: 0;
+    border: 1px solid #fff;
+  }
+}
+
+.entry {
+  position: relative;
+  top: -$line-height__base;
+  padding: $line-height__base half($line-height__base) 0;
+  margin-bottom: - $line-height__base;
+  max-width: 50em;
+  background: #fff;
+
+  @media #{$medium-up} {
+    top: - double($line-height__base);
+    margin-bottom: - double($line-height__base);
+  }
+
+  @media #{$large-up} {
+    top: (-$line-height__base * 3);
+    margin-bottom: (-$line-height__base * 3);
+    padding: double($line-height__base) double($line-height__base) 0 double($line-height__base);
+  }
+
+  &__body { position: relative; }
+
+  &__content { margin-top: $line-height__medium; }
+
+  &__header {
+    margin-bottom: half($line-height__medium);
+    text-align: center;
+
+    &__meta {
+      font-size: $font-size__small;
+      line-height: $line-height__small;
+      color: $color__type--hover;
+    }
+  }
+
+  &__title {
+    margin-bottom: half($line-height__medium);
+    font-family: $font__serif;
+    font-size: $font-size__base;
+    line-height: $line-height__base;
+    font-weight: $font-weight__light;
+
+    @media #{$medium-up} {
+      font-size: double($font-size__medium);
+      line-height: double($line-height__medium);
+    }
+
+    @media #{$large-up} {
+      font-size: double($font-size__base);
+      line-height: double($line-height__base);
+    }
+  }
+
+  &__date {
+    position: relative;
+    padding-right: half($line-height__base);
+    padding-left: 0;
+    display: inline-block;
+
+    &:after {
+      position: absolute;
+      background: $color__type--hover;
+      width: 2px;
+      height: 2px;
+      bottom: quarter($line-height__base);
+      left: auto;
+      right: quarter($line-height__small);
+      content: "";
+      border-radius: 50%;
+    }
+  }
+
+  &__cats a {
+    color: $color__type--hover;
+
+    &:hover { color: $color__type; }
+  }
+
+  &__tags {
+    margin-top: $line-height__medium;
+    margin-bottom: $line-height__base;
+    font-size: $font-size__small;
+
+    a {
+      padding: half(quarter($line-height__small)) half($line-height__small);
+      margin: half(quarter($line-height__base)) quarter($line-height__base) half(quarter($line-height__base)) 0;
+      display: inline-block;
+
+      font-size: $font-size__tiny;
+      line-height: $line-height__small;
+
+      color: $color__type--hover;
+      border: 1px solid $border-color;
+      text-decoration: none;
+      transition: $base-transition-speed;
+
+      &:before {
+        content: "#";
+        padding-right: 2px;
+      }
+
+      &:hover {
+        color: $color__type;
+        border-color: $color__type;
+      }
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    z-index: 0;
+    border: 1px solid #fff;
+  }
+}
+
+.entry-footer { margin-top: $line-height__medium; }

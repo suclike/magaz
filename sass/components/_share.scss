@@ -1,0 +1,59 @@
+//---------------------------
+//
+// Share icons
+//
+//---------------------------
+
+.share-list {
+  display: flex;
+  padding: 0;
+  border: 1px solid $border-color;
+  margin-bottom: $line-height__medium;
+
+  line-height: $line-height__base;
+  list-style: none;
+
+  @media #{$large-up} {
+    margin-bottom: $line-height__base;
+  }
+
+  li {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    border-right: 1px solid $border-color;
+
+    &:first-child { border-left: 0; }
+    &:last-child { border-right: 0; }
+  }
+
+  &__link {
+    display: block;
+    font-size: $font-size__small;
+    transition: $base-transition-speed;
+
+    .genericon {
+      vertical-align: middle;
+    }
+
+    &:hover {
+      background-color: $grey-bg;
+
+      .share-list__icon--twitter  { color: $twitter-brand; }
+      .share-list__icon--facebook { color: $facebook-brand; }
+      .share-list__icon--google   { color: $google-brand; }
+    }
+
+    @media #{$medium-up} {
+      padding: quarter($line-height__tiny);
+    }
+  }
+
+  &__icon {
+    fill: $color__type;
+  }
+
+  @media #{$medium-down} {
+    margin-bottom: $line-height__medium;
+  }
+}

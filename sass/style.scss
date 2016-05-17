@@ -1,0 +1,113 @@
+/*
+Theme Name:         Magaz
+Theme URI:          http://aspire-wp.aspirethemes.com/
+Description:        Magazine/News Minimal WordPress Theme by - <a href="http://aspirethemes.com">Aspire Themes</a>
+Version:            1.0.0
+Author:             Aspire Themes
+Author URI:         http://aspirethemes.com
+Text Domain:        magaz
+Tags:               light, one-column, two-columns, featured-images, sticky-post, translation-ready, custom-menu
+
+License:            ''
+License URI:        ''
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Normalize & Reset
+2.0 Typography
+3.0 Icons
+  3.1 Evil Icons
+  3.2 Genericons
+4.0 Elements
+  4.1 Forms
+  4.2 Buttons
+  4.3 Tables
+  4.4 Code
+5.0 Components
+  5.1 Grid
+  5.2 Box
+  5.3 Share
+  5.4 Widgets
+  5.5 Flex Embed
+  5.6 Calendar
+  5.7 Post Card
+  5.8 Headings
+  5.9 Accessibility
+6.0 Navigation
+  6.1 Navigation
+  6.2 Pagination
+7.0 Media
+  9.1 Captions
+  9.2 Galleries
+8.0 Content
+  8.1 Header
+  8.2 Off canvas
+  8.3 Footer
+  8.4 Posts & Pages
+  8.5 Search
+  8.6 Comments
+  8.7 Author
+9.0 Helpers
+  9.1 Alignments
+  9.2 Clearfix
+  9.3 Colors
+  9.4 Layout
+  9.5 Lists
+  9.6 Typography
+--------------------------------------------------------------*/
+
+// Variables
+@import 'variables/_all';
+
+// Functions
+@import 'functions/_all';
+
+/*--------------------------------------------------------------
+1.0 Normalize & Reset
+--------------------------------------------------------------*/
+
+@import 'base/_all';
+
+/*--------------------------------------------------------------
+3.0 Icons
+--------------------------------------------------------------*/
+
+@import 'icons/_all';
+
+/*--------------------------------------------------------------
+4.0 Elements
+--------------------------------------------------------------*/
+
+@import 'elements/_all';
+
+/*--------------------------------------------------------------
+5.0 Components
+--------------------------------------------------------------*/
+
+@import 'components/_all';
+
+/*--------------------------------------------------------------
+6.0 Navigation
+--------------------------------------------------------------*/
+
+@import 'navigation/_all';
+
+/*--------------------------------------------------------------
+7.0 Media
+--------------------------------------------------------------*/
+
+@import 'media/_all';
+
+/*--------------------------------------------------------------
+8.0 Content
+--------------------------------------------------------------*/
+
+@import 'content/_all';
+
+/*--------------------------------------------------------------
+9.0 Helpers
+--------------------------------------------------------------*/
+
+@import 'helpers/_all';

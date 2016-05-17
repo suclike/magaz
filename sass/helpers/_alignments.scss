@@ -1,0 +1,46 @@
+//---------------------------
+//
+// Align
+//
+//---------------------------
+
+.text-left    { text-align: left; }
+.text-right   { text-align: right; }
+.text-center  { text-align: center; }
+.text-justify { text-align: justify; }
+
+.alignnone { margin: 0 0 $line-height__medium 0; }
+
+.aligncenter { margin: 0 auto; }
+
+.alignright {
+  float: right;
+  margin: quarter($line-height__medium) 0 $line-height__medium $line-height__medium;
+}
+
+.alignleft {
+  float: left;
+  margin: quarter($line-height__medium) $line-height__medium $line-height__medium 0;
+}
+
+a img {
+  &.alignright {
+    float: right;
+    margin: quarter($line-height__medium) 0 $line-height__medium $line-height__medium;
+  }
+
+  &.alignnone {
+    margin: quarter($line-height__medium) $line-height__medium $line-height__medium 0;
+  }
+
+  &.alignleft {
+    float: left;
+    margin: quarter($line-height__medium) $line-height__medium $line-height__medium 0;
+  }
+
+  &.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+}

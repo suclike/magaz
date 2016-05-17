@@ -1,0 +1,34 @@
+//---------------------------
+//
+// Footer
+//
+//---------------------------
+
+.site-footer {
+  border-top: 1px solid $border-color;
+
+  @media #{$medium-down} {
+    padding-top: $line-height__base;
+
+    .site-footer__section {
+      margin-bottom: half($line-height__base);
+    }
+  }
+
+  .textwidget {
+    font-size: $font-size__tiny;
+    line-height: $line-height__medium;
+  }
+}
+
+.site-footer__top {
+  padding-top: $line-height__base;
+  padding-bottom: $line-height__base;
+  border-bottom: 1px solid $border-color;
+}
+
+.site-footer__bottom {
+  text-align: center;
+  padding-top: half($line-height__base);
+  padding-bottom: half($line-height__base);
+}

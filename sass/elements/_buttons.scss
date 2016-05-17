@@ -1,0 +1,115 @@
+//---------------------------
+//
+// Sidebar
+//
+//---------------------------
+
+$button-background-color: $color__type;
+$button-background-color--hover: $color__type--hover;
+
+$button-info-background-color: #a0d3e8;
+$button-info-background-color--hover: #61b6d9;
+
+$button-success-background-color: #43AC6A;
+$button-success-background-color--hover: #368a55;
+
+$button-alert-background-color: #ec5454;
+$button-alert-background-color--hover: #e61a1a;
+
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: quarter($line-height__base) half($line-height__base);
+  font-size: $font-size__tiny;
+  font-family: $font__sans-serif;
+  line-height: $line-height__medium;
+  letter-spacing: 1px;
+  border: 0;
+  border-radius: 0;
+
+  text-decoration: none;
+  color: #fff;
+  background-color: $button-background-color;
+  transition: $base-transition-speed;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: #fff;
+    background-color: $button-background-color--hover;
+  }
+
+  &:visited { color: #fff; }
+
+  &.info {
+    background-color: $button-info-background-color;
+
+    &:active,
+    &:focus,
+    &:hover { background-color: $button-info-background-color--hover; }
+  }
+
+  &.success {
+    background-color: $button-success-background-color;
+
+    &:active,
+    &:focus,
+    &:hover { background-color: $button-success-background-color--hover; }
+  }
+
+  &.alert {
+    background-color: $button-alert-background-color;
+
+    &:active,
+    &:focus,
+    &:hover { background-color: $button-alert-background-color--hover; }
+  }
+
+  &.twitter {
+    color: #fff;
+    background-color: $twitter-brand;
+
+    .icon {
+      margin-right: 5px;
+      vertical-align: middle;
+      fill: #fff;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: #fff;
+      background-color: $twitter-brand--hover;
+    }
+  }
+
+  &.outline {
+    border: 1px solid $color__type;
+    background-color: #fff;
+    color: $color__type;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: #fff;
+      background-color: $button-background-color;
+    }
+  }
+
+  &.large {
+    padding: half($line-height__base) $line-height__base;
+    line-height: $line-height__medium;
+  }
+
+  &.small {
+    padding: quarter($line-height__small) half($line-height__small);
+    line-height: $line-height__small;
+  }
+
+  &.tiny {
+    padding: quarter($line-height__tiny) half($line-height__tiny);
+    line-height: $line-height__tiny;
+  }
+
+  &.expand { width: 100%; }
+}

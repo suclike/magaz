@@ -1,0 +1,149 @@
+//---------------------------
+//
+// Typography
+//
+//---------------------------
+
+body {
+  color: $color__type;
+  background-color: #fff;
+  font-size: $font-size__base;
+  font-weight: $font-weight__light;
+  font-family: $font__sans-serif;
+  line-height: $line-height__base;
+  direction: ltr;
+
+  @media #{$medium-down} {
+    font-size: $font-size__medium;
+    line-height: $line-height__medium;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font__sans-serif;
+  font-size: $font-size__base;
+  font-weight: $font-weight__light;
+  margin: 0 0 $line-height__medium;
+
+  @media #{$medium-down} {
+    font-size: $font-size__medium;
+    line-height: $line-height__base;
+  }
+
+  a { text-decoration: none; }
+}
+
+.entry__content {
+  font-family: $font__serif;
+
+  h1 { font-size: 32px; }
+  h2 { font-size: 28px; }
+  h3 { font-size: 26px; }
+  h4 { font-size: 22px; }
+  h5 { font-size: 19px; }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 { font-family: $font__serif; }
+
+  a:not(.button) { text-decoration: underline; }
+
+  p,
+  ul,
+  ol,
+  dl {
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+p {
+  &.font-small {
+    margin: 0 0 $line-height__small;
+  }
+
+  &.font-tiny {
+    margin: 0 0 $line-height__tiny;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0 double($line-height__base) 0 double($line-height__base);
+  font-style: italic;
+
+  @media #{$medium-down} {
+    padding: 0 double($line-height__small) 0 double($line-height__small);
+  }
+
+  p { margin-bottom: $line-height__medium; }
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: $border-color;
+  margin: 0 0 $line-height__base;
+
+  @media #{$medium-down} {
+    margin: 0 0 ($line-height__medium);
+  }
+}
+
+p,
+ul,
+ol,
+dl {
+  font-size: $font-size__medium;
+  margin: 0 0 $line-height__medium 0;
+}
+
+ul,
+ol {
+  ul,
+  ol {
+    margin: 0;
+  }
+
+  li & {
+    margin-bottom: 0;
+    padding-left: half($line-height__base);
+  }
+}
+
+dl dd {
+  margin-left: $line-height__medium;
+}
+
+a {
+  color: $color__type;
+  text-decoration: none;
+  transition: $base-transition-speed;
+
+  &:visited {
+    color: $color__type;
+  }
+
+  &:hover {
+    color: $color__type--hover;
+  }
+
+  &:active {
+    color: $color__type;
+  }
+
+  &.custom {
+    text-decoration: none;
+  }
+}

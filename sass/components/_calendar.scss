@@ -1,0 +1,61 @@
+//---------------------------
+//
+// Calendar
+//
+//---------------------------
+
+.calendar_wrap {
+  table {
+    margin: 0;
+    width: 100%;
+  }
+
+  table,
+  thead th,
+  tfoot td {
+    border: 0;
+  }
+
+  caption {
+    text-align: right;
+    font-size: $font-size__tiny;
+    margin-bottom: quarter($line-height__medium);
+  }
+
+  thead {
+    font-size: $font-size__tiny;
+
+    th {
+      padding-bottom: quarter($line-height__medium);
+      font-weight: $font-weight__light;
+    }
+  }
+
+  tbody {
+    color: $color__type--hover;
+
+    td {
+      padding: 0;
+      background: $grey-bg;
+      border: 1px solid #fff;
+      text-align: center;
+      font-size: $font-size__tiny;
+
+      &:hover { background: #fff; }
+    }
+
+    .pad { background: none; }
+  }
+
+  tfoot {
+    td { padding: 0;}
+    #next,
+    #prev {
+      padding-top: quarter($line-height__medium);
+      font-size: $font-size__tiny;
+      text-transform: uppercase;
+    }
+
+    #next { text-align: right; }
+  }
+}

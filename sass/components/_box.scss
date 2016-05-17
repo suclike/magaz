@@ -1,0 +1,77 @@
+//---------------------------
+//
+// Box
+//
+//---------------------------
+
+.box {
+  padding-bottom: $line-height__medium;
+  margin-bottom: $line-height__medium;
+  overflow: hidden;
+
+  @media #{$large-up} {
+    padding-bottom: $line-height__base;
+    margin-bottom: $line-height__base;
+  }
+
+  &__icon {
+    float: left;
+    left: -7px;
+    width: $line-height__base;
+  }
+
+  &__title {
+    margin: 0;
+    line-height: $line-height__medium;
+  }
+
+  &__body {
+    @media #{$medium-up} {
+      overflow: hidden;
+    }
+  }
+
+  &__text {
+    clear: both;
+    margin-top: half($line-height__small);
+    margin-bottom: 0;
+
+    font-size: $font-size__small;
+    line-height: $line-height__small;
+
+    @media #{$medium-up} {
+      margin-top: half($line-height__small);
+    }
+  }
+
+  a { text-decoration: none; }
+
+  &--author {
+    .box__title {
+      margin-bottom: half($line-height__base);
+      margin-top: half($line-height__base);
+
+      @media #{$medium-up} { margin: 0; }
+    }
+
+    .box__text {
+      margin-top: half($line-height__small);
+
+      @media #{$medium-up} {
+        margin-top: half($line-height__medium);
+      }
+    }
+  }
+
+  &--author { background-color: $grey-bg; }
+
+  &--full-padding {
+    padding: $line-height__medium;
+
+    @media #{$large-up} {
+      padding: $line-height__base;
+    }
+  }
+
+  &--has-border { border-bottom: 1px solid $border-color; }
+}

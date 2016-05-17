@@ -1,0 +1,37 @@
+//---------------------------
+//
+// Caption
+//
+//---------------------------
+
+.wp-caption {
+  max-width: 100%;
+  background: #fff;
+  border: 1px solid $border-color;
+  padding: quarter($line-height__medium);
+  text-align: center;
+  margin-bottom: $line-height__medium;
+
+  &.alignnone {
+    margin: quarter($line-height__medium) $line-height__medium $line-height__medium 0;
+  }
+
+  &.alignleft {
+    margin: quarter($line-height__medium) $line-height__medium $line-height__medium 0;
+  }
+
+  &.alignright {
+    margin: quarter($line-height__medium) 0 $line-height__medium $line-height__medium;
+  }
+
+  img {
+    margin-bottom: quarter($line-height__medium);
+  }
+
+  .wp-caption-text {
+    font-size: $font-size__small;
+    line-height: $line-height__small;
+    margin: 0;
+    padding: quarter($line-height__medium);
+  }
+}
