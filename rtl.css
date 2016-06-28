@@ -2126,7 +2126,6 @@ p code {
 --------------------------------------------------------------*/
 .share-list {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   padding: 0;
@@ -2144,7 +2143,6 @@ p code {
 
 .share-list li {
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: center;
@@ -2788,17 +2786,14 @@ input[type='search'].search-field {
 
 .post-list {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .post-list .post-card-wrap {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -2895,6 +2890,7 @@ input[type='search'].search-field {
 .site-header__navigation .menu-item {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   margin-left: 16px;
   margin-right: 0;
   margin-bottom: 0;
@@ -3326,20 +3322,17 @@ img {
 /* Make the footer stick to the bottom if content is small */
 .off-canvas-container {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
 .off-canvas-container .site-content {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
