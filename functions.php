@@ -334,7 +334,7 @@ function magaz_fonts_url() {
   Translators: If there are characters in your language that are not supported
   by chosen font(s), translate this to 'off'. Do not translate into your own language.
    */
-  if ( 'off' !== _x( 'on', 'Google font: on or off', 'studio' ) ) {
+  if ( 'off' !== _x( 'on', 'Google font: on or off', 'magaz' ) ) {
       $font_url = add_query_arg( 'family', urlencode( 'Merriweather:400,300' ), '//fonts.googleapis.com/css' );
   }
   return $font_url;
