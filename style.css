@@ -3612,13 +3612,6 @@ img {
   }
 }
 
-@media only screen and (min-width: 64.063em) {
-  .entry__title {
-    font-size: 38px;
-    line-height: 64px;
-  }
-}
-
 .entry__date {
   position: relative;
   padding-right: 16px;

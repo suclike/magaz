@@ -99,11 +99,6 @@
       font-size: double($font-size__medium);
       line-height: double($line-height__medium);
     }
-
-    @media #{$large-up} {
-      font-size: double($font-size__base);
-      line-height: double($line-height__base);
-    }
   }
 
   &__date {
