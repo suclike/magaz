@@ -2,7 +2,7 @@
 Theme Name:         Magaz
 Theme URI:          http://aspire-wp.aspirethemes.com/
 Description:        Magazine/News Minimal WordPress Theme by - <a href="http://aspirethemes.com">Aspire Themes</a>
-Version:            1.0.0
+Version:            1.1.0
 Author:             Aspire Themes
 Author URI:         http://aspirethemes.com
 Text Domain:        magaz
@@ -41,7 +41,7 @@ License URI:        ''
 7.0 Media
   9.1 Captions
   9.2 Galleries
-8.0 Content
+8.0 Sections
   8.1 Header
   8.2 Off canvas
   8.3 Footer
@@ -101,10 +101,10 @@ License URI:        ''
 @import 'media/_all';
 
 /*--------------------------------------------------------------
-8.0 Content
+8.0 Sections
 --------------------------------------------------------------*/
 
-@import 'content/_all';
+@import 'sections/_all';
 
 /*--------------------------------------------------------------
 9.0 Helpers

@@ -3,7 +3,7 @@
 Theme Name:         Magaz
 Theme URI:          http://aspire-wp.aspirethemes.com/
 Description:        Magazine/News Minimal WordPress Theme by - <a href="http://aspirethemes.com">Aspire Themes</a>
-Version:            1.0.0
+Version:            1.1.0
 Author:             Aspire Themes
 Author URI:         http://aspirethemes.com
 Text Domain:        magaz
@@ -41,7 +41,7 @@ License URI:        ''
 7.0 Media
   9.1 Captions
   9.2 Galleries
-8.0 Content
+8.0 Sections
   8.1 Header
   8.2 Off canvas
   8.3 Footer
@@ -2790,12 +2790,15 @@ input[type='search'].search-field {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
 }
 
 .post-list .post-card-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
 }
 
 .post-list .post-card {
@@ -2889,18 +2892,21 @@ input[type='search'].search-field {
 --------------------------------------------------------------*/
 .site-header__navigation .menu-item {
   position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 16px;
+  display: block;
   margin-left: 0;
   margin-bottom: 0;
   font-size: 14px;
 }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (min-width: 40.063em) {
   .site-header__navigation .menu-item {
-    display: block;
-    margin-right: 0;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .site-header__navigation .menu-item {
+    margin-right: 6px;
   }
 }
 
@@ -3299,7 +3305,7 @@ img {
 }
 
 /*--------------------------------------------------------------
-8.0 Content
+8.0 Sections
 --------------------------------------------------------------*/
 .wrapper {
   padding: 0 0 25px 0;

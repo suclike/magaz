@@ -8,17 +8,13 @@
 
   .menu-item {
     position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: half($line-height__base);
+    display: block;
     margin-left: 0;
     margin-bottom: 0;
     font-size: $font-size__small;
 
-    @media #{$medium-down} {
-      display: block;
-      margin-right: 0;
-    }
+    @media #{$medium-up} { display: inline-block; }
+    @media #{$large-up} { margin-right: quarter($line-height__small); }
   }
 
   ul {
