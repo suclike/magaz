@@ -203,13 +203,13 @@ function magaz_setup() {
     $req = get_option( 'require_name_email' );
     $aria_req = ( $req ? " aria-required='true'" : '' );
 
-    $fields['author'] = '<div class="row"><div class="column small-12 large-4">'.
-      '<input id="author" name="author" type="text" placeholder="' . esc_html__( 'Name', 'magaz' ) . ( $req ? ' *' : '' ) . '" value="' . esc_attr( $commenter['comment_author'] ) . '" size="20"' . $aria_req . ' /></div>';
+    $fields['author'] = '<div class="row"><div class="column large-4">'.
+      '<p><input id="author" name="author" type="text" placeholder="' . esc_html__( 'Name', 'magaz' ) . ( $req ? ' *' : '' ) . '" value="' . esc_attr( $commenter['comment_author'] ) . '" size="20"' . $aria_req . ' /></p></div>';
 
-    $fields['email'] = '<div class="column small-12 large-4">'.
-      '<input id="email" name="email" type="text" placeholder="' . esc_html__( 'Email', 'magaz' ) . ( $req ? ' *' : '' ) . '" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="20"' . $aria_req . ' /></div>';
+    $fields['email'] = '<div class="column large-4">'.
+      '<p><input id="email" name="email" type="text" placeholder="' . esc_html__( 'Email', 'magaz' ) . ( $req ? ' *' : '' ) . '" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="20"' . $aria_req . ' /></p></div>';
 
-    $fields['url'] = '<div class="column small-12 large-4">'.
+    $fields['url'] = '<div class="column large-4">'.
       '<p><input id="url" name="url" type="text" placeholder="' . esc_html__( 'Website', 'magaz' ) . '" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="20"' . $aria_req . ' /></p></div></div>';
 
     return $fields;

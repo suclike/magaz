@@ -1607,7 +1607,7 @@ select {
   width: 100%;
   max-width: 100%;
   margin-bottom: 0;
-  display: inline-block;
+  display: block;
   border: 1px solid #7B8994;
   padding: 6px 11px;
   font-family: "Merriweather", "Georgia", serif;
