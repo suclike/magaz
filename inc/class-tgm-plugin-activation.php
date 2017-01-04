@@ -817,7 +817,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
 				// Display message based on if all plugins are now active or not.
 				if ( $this->is_tgmpa_complete() ) {
-					echo '<p>', sprintf( esc_html( $this->strings['complete'] ), '<a href="' . esc_url( self_admin_url() ) . '">' . esc_html__( 'Return to the Dashboard', 'tgmpa' ) . '</a>' ), '</p>';
+					echo '<p>', sprintf( esc_html( $this->strings['complete'] ), '<a href="' . esc_url( self_admin_url() ) . '">' . esc_html__( 'Return to the Dashboard', 'magaz' ) . '</a>' ), '</p>';
 					echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
 				} else {
 					echo '<p><a href="', esc_url( $this->get_tgmpa_url() ), '" target="_parent">', esc_html( $this->strings['return'] ), '</a></p>';
@@ -1105,7 +1105,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 					$count          = count( $plugin_group );
 					$linked_plugins = array_map( array( 'TGMPA_Utils', 'wrap_in_em' ), $linked_plugins );
 					$last_plugin    = array_pop( $linked_plugins ); // Pop off last name to prep for readability.
-					$imploded       = empty( $linked_plugins ) ? $last_plugin : ( implode( ', ', $linked_plugins ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'tgmpa' ) . ' ' . $last_plugin );
+					$imploded       = empty( $linked_plugins ) ? $last_plugin : ( implode( ', ', $linked_plugins ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'magaz' ) . ' ' . $last_plugin );
 
 					$rendered .= sprintf(
 						$line_template,
@@ -2821,7 +2821,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 					printf( // WPCS: xss ok.
 						'<div id="message" class="updated"><p>%1$s %2$s.</p></div>',
-						esc_html( _n( 'The following plugin was activated successfully:', 'The following plugins were activated successfully:', $count, 'tgmpa' ) ),
+						esc_html( _n( 'The following plugin was activated successfully:', 'The following plugins were activated successfully:', $count, 'magaz' ) ),
 						$imploded
 					);
 
@@ -3359,7 +3359,7 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 							if ( $this->tgmpa->is_automatic ) {
 								// Automatic activation strings.
 								$this->upgrader->strings['skin_upgrade_start']        = __( 'The installation and activation process is starting. This process may take a while on some hosts, so please be patient.', 'magaz' );
-								$this->upgrader->strings['skin_update_successful']    = __( '%1$s installed and activated successfully.', 'magaz' ) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'magaz' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'tgmpa' ) . '</span>.</a>';
+								$this->upgrader->strings['skin_update_successful']    = __( '%1$s installed and activated successfully.', 'magaz' ) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'magaz' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'magaz' ) . '</span>.</a>';
 								$this->upgrader->strings['skin_upgrade_end']          = __( 'All installations and activations have been completed.', 'magaz' );
 								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing and Activating Plugin %1$s (%2$d/%3$d)', 'magaz' );
 							} else {

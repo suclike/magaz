@@ -28,6 +28,26 @@ function magaz_setup() {
   add_theme_support( 'automatic-feed-links' );
 
   /*
+   * Add Custom Header Support
+   */
+  $args = array(
+    'flex-width'    => true,
+    'flex-height'   => true,
+    'default-image' => '',
+  );
+
+  add_theme_support( 'custom-header', $args );
+
+  /*
+   * Add Custom Logo Support
+   */
+  add_theme_support('custom-logo', array(
+    'height'     => 32,
+    'width'      => 150,
+    'flex-width' => true,
+  ));
+
+  /*
    * Let WordPress manage the document title.
    * By adding theme support, we declare that this theme does not use a
    * hard-coded <title> tag in the document head, and expect WordPress to
@@ -372,19 +392,3 @@ require get_template_directory() . '/inc/extras.php';
  * Required Plugins.
  */
 require get_template_directory() . '/inc/plugins.php';
-
-/**
- * Customizer Library
- */
-// Helper library for the theme customizer.
-require get_template_directory() . '/customizer/customizer-library/customizer-library.php';
-
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/customizer/customizer.php';
-
-/**
- * Load Jetpack compatibility file.
- */
-require get_template_directory() . '/inc/jetpack.php';

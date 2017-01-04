@@ -116,19 +116,7 @@
 
             <div class='column large-12'>
               <div class='font-tiny'>
-                <?php $footer_copyright = get_theme_mod( 'footer_copyright', customizer_library_get_default( 'footer_copyright' ) ); ?>
-
-                <?php
-                  echo wp_kses( $footer_copyright,
-                    array(
-                      'strong' => array(),
-                      'a' => array(
-                      'href' => array(),
-                      'title' => array()
-                      ),
-                    )
-                  );
-                ?>
+                &copy; <?php echo date('Y'); ?> <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo(); ?></a>
               </div>
             </div>
 

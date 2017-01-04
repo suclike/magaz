@@ -3387,20 +3387,21 @@ img {
   color: #7E7E7E;
 }
 
-.site-header__logo--img {
-  max-height: 25px;
-  vertical-align: middle;
-}
-
-@media only screen and (min-width: 40.063em) {
-  .site-header__logo--img {
-    max-height: 32px;
-  }
-}
-
 @media only screen and (max-width: 40em) {
   .site-header__logo {
     line-height: 25px;
+  }
+}
+
+.custom-logo {
+  width: auto;
+  vertical-align: middle;
+  max-height: 25px;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .custom-logo {
+    max-height: 32px;
   }
 }
 

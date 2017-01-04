@@ -6,16 +6,12 @@
         <div class='row'>
 
           <div class='column small-8 medium-3 large-3'>
-            <?php $header_logo = get_theme_mod( 'header_logo' ); if ( ! $header_logo ) : ?>
-
-            <h1 class='site-header__logo'>
-              <a href='<?php echo esc_url( home_url( '/' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a>
-            </h1>
-
+            <?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
+              <?php the_custom_logo() ?>
             <?php else: ?>
-
-            <a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php bloginfo( 'name' ); ?>'><img class='site-header__logo site-header__logo--img' src='<?php echo esc_url( $header_logo ); ?>' alt='<?php bloginfo( 'name' ); ?>'></a>
-
+              <h1 class='site-header__logo'>
+                <a href='<?php echo esc_url( home_url( '/' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a>
+              </h1>
             <?php endif; ?>
           </div>
 
@@ -51,14 +47,11 @@
                   ?>
                 <?php endif; ?>
 
-                <?php $toggle_search_icon = get_theme_mod( 'toggle_search_icon' ); if ( ! $toggle_search_icon ) : ?>
-                  <li>
-                    <div class='toggle-search-button'>
-                      <span class="genericon genericon-search toggle-search-button__icon"></span>
-                    </div>
-                  </li>
-                <?php endif; ?>
-
+                <li>
+                  <div class='toggle-search-button'>
+                    <span class="genericon genericon-search toggle-search-button__icon"></span>
+                  </div>
+                </li>
               </ul>
             </div>
 

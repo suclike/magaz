@@ -28,8 +28,6 @@
 
     <?php get_template_part( 'template-parts/site-header' ); ?>
 
-    <?php $toggle_search_icon = get_theme_mod( 'toggle_search_icon' ); if ( ! $toggle_search_icon ) : ?>
-      <?php get_template_part( 'template-parts/modal-search-form' ); ?>
-    <?php endif; ?>
+    <?php get_template_part( 'template-parts/modal-search-form' ); ?>
 
     <div id='content' class='site-content'>

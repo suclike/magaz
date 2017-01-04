@@ -1,0 +1,5 @@
+Magaz WordPress Theme
+
+== DOCUMENTATION ==
+
+Comprehensive documentation for the theme is provided at the theme's documentation page: https://aspirethemes.com/docs/magaz-wordpress/

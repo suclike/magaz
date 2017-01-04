@@ -2,7 +2,7 @@
 // Header
 //---------------------------
 
-$header-border-color: rgba(255, 255, 255, 0.6);
+$header-border-color: rgba(255, 255, 255, .6);
 
 .site-header {
   position: absolute;
@@ -36,17 +36,18 @@ $header-border-color: rgba(255, 255, 255, 0.6);
       }
     }
 
-    &--img {
-      max-height: $line-height__medium;
-      vertical-align: middle;
-
-      @media #{$medium-up} {
-        max-height: $line-height__base;
-      }
-    }
-
     @media #{$medium-down} {
       line-height: $line-height__medium;
     }
+  }
+}
+
+.custom-logo {
+  width: auto;
+  vertical-align: middle;
+  max-height: $line-height__medium;
+
+  @media #{$medium-up} {
+    max-height: $line-height__base;
   }
 }
