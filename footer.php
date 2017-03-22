@@ -116,7 +116,7 @@
 
             <div class='column large-12'>
               <div class='font-tiny'>
-                &copy; <?php echo date('Y'); ?> <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo(); ?></a>
+                &copy; <?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo(); ?></a>
               </div>
             </div>
 
