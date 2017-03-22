@@ -3,17 +3,16 @@
   'use strict';
 
   // Include Gulp & Tools
-  var gulp         = require('gulp');
-  var sass         = require('gulp-sass');
-  var rtlcss       = require('gulp-rtlcss');
-  var minifycss    = require('gulp-minify-css');
-  var autoprefixer = require('gulp-autoprefixer');
-  var runSequence  = require('run-sequence');
-  var concat       = require('gulp-concat');
-  var rename       = require('gulp-rename');
-  var uglify       = require('gulp-uglify');
-  var plumber      = require('gulp-plumber');
-  var gutil        = require('gulp-util');
+  var gulp         = require('gulp'),
+      sass         = require('gulp-sass'),
+      rtlcss       = require('gulp-rtlcss'),
+      autoprefixer = require('gulp-autoprefixer'),
+      runSequence  = require('run-sequence'),
+      concat       = require('gulp-concat'),
+      rename       = require('gulp-rename'),
+      uglify       = require('gulp-uglify'),
+      plumber      = require('gulp-plumber'),
+      gutil        = require('gulp-util');
 
   var onError = function(err) {
     console.log('An error occurred:', gutil.colors.magenta(err.message));
@@ -42,8 +41,6 @@
       './js/scripts/app.js'])
       .pipe(plumber({ errorHandler: onError }))
       .pipe(concat('app.js'))
-      .pipe(rename({ suffix: '.min' }))
-      .pipe(uglify())
       .pipe(gulp.dest('./js'))
   });
 
