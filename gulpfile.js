@@ -4,7 +4,6 @@
 
   // Include Gulp & Tools
   var gulp         = require('gulp');
-  var watch        = require('gulp-watch');
   var sass         = require('gulp-sass');
   var rtlcss       = require('gulp-rtlcss');
   var minifycss    = require('gulp-minify-css');
@@ -37,10 +36,10 @@
   // JavaScript
   gulp.task('js', function() {
     return gulp.src([
-      './js/scripts/jquery-2.1.4.min.js',
-      './js/scripts/jquery.fitvids.js',
+      './node_modules/evil-icons/assets/evil-icons.min.js',
+      './bower_components/jquery.fitvids/jquery.fitvids.js',
       './js/scripts/skip-link-focus-fix.js',
-      './js/scripts/script.js'])
+      './js/scripts/app.js'])
       .pipe(plumber({ errorHandler: onError }))
       .pipe(concat('app.js'))
       .pipe(rename({ suffix: '.min' }))

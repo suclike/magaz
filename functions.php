@@ -366,11 +366,9 @@ function magaz_fonts_url() {
 function magaz_scripts() {
   wp_enqueue_style( 'magaz-fonts', magaz_fonts_url(), array(), '1.0.0' );
 
-  wp_enqueue_script( 'magaz-evil-icons-script', get_template_directory_uri() . '/js/scripts/evil-icons.min.js', array(), '20120206', false );
-
   wp_enqueue_style( 'magaz-style', get_stylesheet_uri() );
 
-  wp_enqueue_script( 'magaz-main-script', get_template_directory_uri() . '/js/app.min.js', array(), '20120206', true );
+  wp_enqueue_script( 'magaz-main-script', get_template_directory_uri() . '/js/app.min.js', array( 'jquery' ), '1.0.0', true );
 
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );

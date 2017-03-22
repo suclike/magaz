@@ -1,0 +1,10 @@
+{
+  "name": "Magaz",
+  "description": "Magazine/News Minimal WordPress Theme",
+  "authors": [
+    "Aspire Themes"
+  ],
+  "dependencies": {
+    "jquery.fitvids": "fitvids#^1.1.0"
+  }
+}

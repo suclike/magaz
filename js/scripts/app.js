@@ -1,4 +1,4 @@
-$(document).ready(function() {
+(function($) {
 
   'use strict';
 
@@ -48,9 +48,9 @@ $(document).ready(function() {
   });
 
   $('.modal-search-container, .close-search-button').on('click keyup', function(event) {
-    if (event.target == this || event.target.className == 'close-search-button' || event.keyCode == 27) {
+    if (event.target == this || $(event.target).hasClass('close-search-button') || event.keyCode == 27) {
       $('.modal-search-container').removeClass('is-active');
     }
   });
 
-});
+})(jQuery);

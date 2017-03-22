@@ -629,7 +629,7 @@ a {
   color: #222222;
   text-decoration: none;
   -webkit-transition: 0.4s;
-          transition: 0.4s;
+  transition: 0.4s;
 }
 
 a:visited {
@@ -1621,7 +1621,7 @@ select {
           appearance: none;
   border-radius: 0;
   -webkit-transition: 0.4s;
-          transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media only screen and (min-width: 64.063em) {
@@ -1699,7 +1699,7 @@ select {
   color: #fff;
   background-color: #222222;
   -webkit-transition: 0.4s;
-          transition: 0.4s;
+  transition: 0.4s;
 }
 
 .button:active, .button:focus, .button:hover {
@@ -2162,7 +2162,7 @@ p code {
   display: block;
   font-size: 14px;
   -webkit-transition: 0.4s;
-          transition: 0.4s;
+  transition: 0.4s;
 }
 
 .share-list__link .genericon {
@@ -2257,7 +2257,7 @@ p code {
   right: auto;
   font-size: 12px;
   -webkit-transition: all 0.4s ease-out;
-          transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .widget iframe {
@@ -2503,7 +2503,7 @@ input[type='search'].search-field {
 .post-card__image {
   margin-bottom: 16px;
   -webkit-transition: 0.4s;
-          transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media only screen and (max-width: 40em) {
@@ -2525,7 +2525,7 @@ input[type='search'].search-field {
   display: block;
   border-bottom: none;
   -webkit-transition: 0.4s;
-          transition: 0.4s;
+  transition: 0.4s;
 }
 
 .post-card__title a:hover {
@@ -2606,7 +2606,7 @@ input[type='search'].search-field {
 
 [data-class="post--first"] .post-card__image:after {
   -webkit-transition: 0.4s;
-          transition: 0.4s;
+  transition: 0.4s;
   position: absolute;
   top: 0;
   height: 100%;
@@ -2960,7 +2960,7 @@ input[type='search'].search-field {
     text-align: right;
     background-color: #fff;
     -webkit-transition: opacity 0.4s;
-            transition: opacity 0.4s;
+    transition: opacity 0.4s;
   }
   .no-header-cover .site-header__navigation .sub-menu {
     box-shadow: 0px 3px 5px rgba(190, 190, 190, 0.46);
@@ -3001,7 +3001,7 @@ input[type='search'].search-field {
   font-weight: 300;
   letter-spacing: 1px;
   -webkit-transition: 0.4s;
-          transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media only screen and (max-width: 40em) {
@@ -3083,7 +3083,7 @@ input[type='search'].search-field {
   text-transform: uppercase;
   letter-spacing: .2em;
   -webkit-transition: 0.4s;
-          transition: 0.4s;
+  transition: 0.4s;
 }
 
 .rtl .pagination__text {
@@ -3294,7 +3294,7 @@ img {
   font-size: 12px;
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.4s;
-          transition: 0.4s;
+  transition: 0.4s;
 }
 
 .gallery-item:hover .gallery-caption {
@@ -3371,7 +3371,7 @@ img {
 
 .site-header__logo a {
   -webkit-transition: 0.4s;
-          transition: 0.4s;
+  transition: 0.4s;
   text-decoration: none;
   letter-spacing: 1px;
   color: #fff;
@@ -3447,13 +3447,13 @@ img {
     -webkit-transform: translate3d(0, 0, 0) translateX(-250px);
             transform: translate3d(0, 0, 0) translateX(-250px);
     -webkit-transition: all 0.4s cubic-bezier(0.16, 0.63, 0.45, 0.98) 0s;
-            transition: all 0.4s cubic-bezier(0.16, 0.63, 0.45, 0.98) 0s;
+    transition: all 0.4s cubic-bezier(0.16, 0.63, 0.45, 0.98) 0s;
   }
   .off-canvas-container {
     -webkit-transform: translate3d(0, 0, 0) translateX(0);
             transform: translate3d(0, 0, 0) translateX(0);
     -webkit-transition: all 0.4s cubic-bezier(0.16, 0.63, 0.45, 0.98) 0s;
-            transition: all 0.4s cubic-bezier(0.16, 0.63, 0.45, 0.98) 0s;
+    transition: all 0.4s cubic-bezier(0.16, 0.63, 0.45, 0.98) 0s;
   }
   .off-canvas-container.is-active {
     -webkit-transform: translate3d(0, 0, 0) translateX(250px);
@@ -3653,7 +3653,7 @@ img {
   border: 1px solid #ECF0F1;
   text-decoration: none;
   -webkit-transition: 0.4s;
-          transition: 0.4s;
+  transition: 0.4s;
 }
 
 .entry__tags a:before {
@@ -3695,7 +3695,7 @@ img {
   font-size: 19px;
   vertical-align: middle;
   -webkit-transition: 0.4s;
-          transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media only screen and (max-width: 40em) {
@@ -3727,7 +3727,7 @@ img {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.4s ease-in-out;
-          transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   -webkit-transform: translate(0px, -100%) scale(0, 0);
           transform: translate(0px, -100%) scale(0, 0);
 }
@@ -3738,7 +3738,7 @@ img {
   left: 32px;
   cursor: pointer;
   -webkit-transition: 0.4s;
-          transition: 0.4s;
+  transition: 0.4s;
   fill: #222222;
 }
 
