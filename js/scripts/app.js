@@ -16,7 +16,9 @@
   // Responsive Videos
   // =================
 
-  $('.entry__content').fitVids();
+  $('.entry__content, .comment-content').fitVids({
+    'customSelector': 'iframe[src*="ted.com"]'
+  });
 
   // ===============
   // Off Canvas Menu
