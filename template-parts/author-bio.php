@@ -10,7 +10,7 @@
 <div class='box box--author box--full-padding'>
 
   <figure class='author-image'>
-    <div class='author-image__img' style='background-image: url(<?php echo get_avatar_url(get_the_author_meta( 'user_email' )) ?>)'></div>
+    <div class='author-image__img' style='background-image: url(<?php echo esc_url( get_avatar_url( get_the_author_meta( 'user_email' ) ) ); ?>)'></div>
   </figure>
 
   <div class='box__body'>
