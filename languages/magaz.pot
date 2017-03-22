@@ -210,18 +210,6 @@ msgstr ""
 msgid "Previous post:"
 msgstr ""
 
-#: template-parts/share.php:12
-msgid "Share on Twitter"
-msgstr ""
-
-#: template-parts/share.php:18
-msgid "Share on Facebook"
-msgstr ""
-
-#: template-parts/share.php:24
-msgid "Share on Google Plus"
-msgstr ""
-
 #: customizer/customizer.php:47
 msgid "Theme Options"
 msgstr ""

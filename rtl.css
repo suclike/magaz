@@ -28,13 +28,12 @@ License URI:        ''
 5.0 Components
   5.1 Grid
   5.2 Box
-  5.3 Share
-  5.4 Widgets
-  5.5 Flex Embed
-  5.6 Calendar
-  5.7 Post Card
-  5.8 Headings
-  5.9 Accessibility
+  5.3 Widgets
+  5.4 Flex Embed
+  5.5 Calendar
+  5.6 Post Card
+  5.7 Headings
+  5.8 Accessibility
 6.0 Navigation
   6.1 Navigation
   6.2 Pagination
@@ -2122,87 +2121,7 @@ p code {
 }
 
 /*--------------------------------------------------------------
-5.3 share
---------------------------------------------------------------*/
-.share-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-  border: 1px solid #ECF0F1;
-  margin-bottom: 25px;
-  line-height: 32px;
-  list-style: none;
-}
-
-@media only screen and (min-width: 64.063em) {
-  .share-list {
-    margin-bottom: 32px;
-  }
-}
-
-.share-list li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: center;
-  margin: 0;
-  border-left: 1px solid #ECF0F1;
-}
-
-.share-list li:first-child {
-  border-right: 0;
-}
-
-.share-list li:last-child {
-  border-left: 0;
-}
-
-.share-list__link {
-  display: block;
-  font-size: 14px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.share-list__link .genericon {
-  vertical-align: middle;
-}
-
-.share-list__link:hover {
-  background-color: #FAFAFA;
-}
-
-.share-list__link:hover .share-list__icon--twitter {
-  color: #55acee;
-}
-
-.share-list__link:hover .share-list__icon--facebook {
-  color: #3b5998;
-}
-
-.share-list__link:hover .share-list__icon--google {
-  color: #dc4e41;
-}
-
-@media only screen and (min-width: 40.063em) {
-  .share-list__link {
-    padding: 5px;
-  }
-}
-
-.share-list__icon {
-  fill: #222222;
-}
-
-@media only screen and (max-width: 40em) {
-  .share-list {
-    margin-bottom: 25px;
-  }
-}
-
-/*--------------------------------------------------------------
-5.4 widget
+5.3 widget
 --------------------------------------------------------------*/
 .widget {
   margin-bottom: 25px;
@@ -2350,7 +2269,7 @@ input[type='search'].search-field {
 }
 
 /*--------------------------------------------------------------
-5.5 Flex Embed
+5.4 Flex Embed
 --------------------------------------------------------------*/
 .FlexEmbed {
   display: block;
@@ -2389,7 +2308,7 @@ input[type='search'].search-field {
 }
 
 /*--------------------------------------------------------------
-5.6 calendar
+5.5 calendar
 --------------------------------------------------------------*/
 .calendar_wrap table {
   margin: 0;
@@ -2453,7 +2372,7 @@ input[type='search'].search-field {
 }
 
 /*--------------------------------------------------------------
-5.7 Post Card
+5.6 Post Card
 --------------------------------------------------------------*/
 .post-card {
   margin-bottom: 25px;
@@ -2805,7 +2724,7 @@ input[type='search'].search-field {
 }
 
 /*--------------------------------------------------------------
-5.8 Headings
+5.7 Headings
 --------------------------------------------------------------*/
 .heading {
   padding-bottom: 13px;
@@ -2854,7 +2773,7 @@ input[type='search'].search-field {
 }
 
 /*--------------------------------------------------------------
-5.9 Accessibility
+5.8 Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers */
 .screen-reader-text {

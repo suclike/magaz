@@ -273,13 +273,6 @@ function magaz_setup() {
 
     wp_reset_postdata();
   }
-
-  /**
-   * Returns the title escaped, to be used in the share URLs
-   */
-  function magaz_get_escaped_title() {
-    echo htmlspecialchars( urlencode( html_entity_decode( get_the_title() . ' - ' ) ) );
-  }
 }
 endif;
 add_action( 'after_setup_theme', 'magaz_setup' );
