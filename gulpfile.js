@@ -28,7 +28,7 @@
     .pipe(autoprefixer())
     .pipe(gulp.dest('./'))              // Output LTR stylesheets
     .pipe(rtlcss())                     // Convert to RTL
-    .pipe(rename({ basename: 'rtl' }))  // Append "-rtl" to the filename
+    .pipe(rename({ basename: 'rtl' }))  // Append '-rtl' to the filename
     .pipe(gulp.dest('./'));             // Output RTL stylesheets
   });
 

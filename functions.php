@@ -369,3 +369,8 @@ require get_template_directory() . '/inc/extras.php';
  * Required Plugins.
  */
 require get_template_directory() . '/inc/plugins.php';
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
