@@ -41,7 +41,7 @@
       './js/scripts/app.js'])
       .pipe(plumber({ errorHandler: onError }))
       .pipe(concat('app.js'))
-      .pipe(gulp.dest('./js'))
+      .pipe(gulp.dest('./js'));
   });
 
   // Watch
