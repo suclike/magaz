@@ -27,10 +27,6 @@ msgstr ""
 msgid "Featured Post"
 msgstr ""
 
-#: 404.php:28
-msgid "Recent Posts"
-msgstr ""
-
 #: template-parts/page-header-404.php:14
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
