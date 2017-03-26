@@ -102,7 +102,7 @@ function magaz_setup() {
       $category_image = category_image_src( array( 'size' => 'full' ) , false );
     }
 
-    echo $category_image;
+    echo esc_url( $category_image );
   }
 
   /**
