@@ -14,8 +14,6 @@ Magaz it is 100% responsive, that means it fits with all different kind of devic
 git clone --recursive git@github.com:aspirethemes/magaz.git
 ```
 
-it's recommended to download it this way using `--recursive` to pull the submodule used with the theme.
-
 #### Features
 
 - Clean and minimal design
