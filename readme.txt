@@ -1,6 +1,6 @@
 === Magaz ===
 Contributors: aspirethemes
-Tags: one-column, two-columns, news, featured-images, sticky-post, translation-ready, custom-menu, rtl-language-support, blog
+Tags: one-column, featured-images, blog
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,7 +11,7 @@ Magaz is a modern, clean, minimal, content and image focus theme for WordPress. 
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.1.2 =
 * First Release
 
 == Resources ==
@@ -22,3 +22,6 @@ Magaz is a modern, clean, minimal, content and image focus theme for WordPress. 
 
 - Images used in screenshot.png:
 [Unsplash](https://unsplash.com/), licensed under Creative Commons Zero (http://creativecommons.org/publicdomain/zero/1.0/)
+
+Magaz WordPress Theme, Copyright 2017 Aspire Themes
+Magaz is distributed under the terms of the GNU GPL

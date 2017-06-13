@@ -22,7 +22,7 @@
       <div class='post-card__meta'>
         <?php if ( !is_author() ) : ?>
           <span class='post-card__meta__author-name'>
-            <a href='<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>' title='<?php echo get_the_author(); ?>'><?php echo get_the_author(); ?> - </a>
+            <a href='<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>'><?php echo get_the_author(); ?> - </a>
           </span>
         <?php endif; ?>
         <time class='post-card__meta__date' datetime='<?php the_time( 'c' ); ?>'><?php echo get_the_date(get_option( 'date_format' )); ?></time>
