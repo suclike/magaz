@@ -144,11 +144,6 @@ msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
-#: template-parts/modal-search-form.php:16
-msgctxt "placeholder"
-msgid "type and hit enter"
-msgstr ""
-
 #: template-parts/content-search.php:20
 msgid "Search Results for: %s"
 msgstr ""

@@ -3683,63 +3683,8 @@ img {
           transform: translate(0px, 0px) scale(1, 1);
 }
 
-.modal-search__field {
-  padding: 0;
-  width: 100%;
-  outline: none;
-  font-size: 28px;
-  line-height: 44px;
-  border: 0;
-  border-bottom: 1px solid #ECF0F1;
-  background-color: transparent;
-}
-
-@media only screen and (min-width: 40.063em) {
-  .modal-search__field {
-    font-size: 38px;
-    line-height: 50px;
-  }
-}
-
-.modal-search__fieldset {
-  border: 0;
-  padding: 0;
+.modal-search {
   margin: 64px 0 0;
-}
-
-.modal-search__results {
-  display: none;
-  height: 80vh;
-  overflow: auto;
-  white-space: normal;
-}
-
-.modal-search__results .heading {
-  margin-right: 16px;
-  margin-left: auto;
-  margin-bottom: 16px;
-  color: #7E7E7E;
-}
-
-.modal-search__results__item {
-  margin-bottom: 16px;
-  margin-right: 16px;
-  margin-left: auto;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #ECF0F1;
-}
-
-.modal-search__results__item__title {
-  display: block;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 25px;
-}
-
-.modal-search__results__post__date {
-  font-size: 12px;
-  line-height: 22px;
-  color: #7E7E7E;
 }
 
 /*--------------------------------------------------------------
