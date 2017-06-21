@@ -1613,11 +1613,7 @@ select {
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 1px;
-  outline: none;
   background: transparent;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   border-radius: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -1667,18 +1663,6 @@ input[type='email']:focus, .comment-form
 textarea:focus, .comment-form
 select:focus {
   border-color: #7E7E7E;
-}
-
-select {
-  background-image: url(images/icon-form-dropdown.svg);
-  background-size: 7px 14px;
-  background-position: left 10px center;
-  background-repeat: no-repeat;
-  padding-left: 25px;
-  border-radius: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 
 /*--------------------------------------------------------------

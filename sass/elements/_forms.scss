@@ -22,9 +22,7 @@ select {
   line-height: $line-height__medium;
   letter-spacing: 1px;
 
-  outline: none;
   background: transparent;
-  appearance: none;
   border-radius: 0;
   transition: $base-transition-speed;
 
@@ -43,14 +41,4 @@ select {
     border-color: $color__type--hover;
     }
   }
-}
-
-select {
-  background-image: url(images/icon-form-dropdown.svg);
-  background-size: 7px 14px;
-  background-position: right 10px center;
-  background-repeat: no-repeat;
-  padding-right: $line-height__medium;
-  border-radius: 0;
-  appearance: none;
 }
