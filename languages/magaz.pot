@@ -201,6 +201,10 @@ msgstr ""
 msgid "Previous post:"
 msgstr ""
 
+#: inc/plugins.php:38
+msgid "WPCustom Category Image"
+msgstr ""
+
 #: inc/class-tgm-plugin-activation.php:327
 msgid "Install Required Plugins"
 msgstr ""
