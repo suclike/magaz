@@ -13,7 +13,7 @@ Magaz is a modern, clean, minimal, content and image focus theme for WordPress. 
 
 == Changelog ==
 
-= 1.1.2 =
+= 1.1.3 =
 * First Release
 
 == Credits ==
@@ -24,8 +24,11 @@ Magaz Theme bundles the following third-party resources:
 2. FitVids.js (http://fitvidsjs.com/), licensed under the WTFPL license - http://sam.zoy.org/wtfpl/
 3. Genericons (http://genericons.com/), licensed under GPL-2.0 license
 4. TGM Plugin Activation (http://tgmpluginactivation.com), licensed under GNU GENERAL PUBLIC LICENSE v2
-7. Image used in screenshot.png: A photo from [Unsplash](https://unsplash.com/), licensed under Creative Commons Zero (http://creativecommons.org/publicdomain/zero/1.0/)
 2. Merriweather font, https://fonts.google.com/specimen/Merriweather. Licensed under SIL Open Font License 1.1.
+7. Images used in screenshot.png are from Unsplash and licensed under Creative Commons Zero (http://creativecommons.org/publicdomain/zero/1.0/):
+  - A photo by Jason Chen https://unsplash.com/photos/cB1MYAiClHY
+  - A photo by Davide Ragusa https://unsplash.com/photos/4jcFu1byopQ
+  - A photo by NASA https://unsplash.com/@nasa?photo=6-jTZysYY_U
 
 Magaz WordPress Theme, Copyright 2017 Aspire Themes
 Magaz is distributed under the terms of the GNU GPL
