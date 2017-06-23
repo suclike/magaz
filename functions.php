@@ -28,17 +28,6 @@ function magaz_setup() {
   add_theme_support( 'automatic-feed-links' );
 
   /*
-   * Add Custom Header Support
-   */
-  $args = array(
-    'flex-width'    => true,
-    'flex-height'   => true,
-    'default-image' => '',
-  );
-
-  add_theme_support( 'custom-header', $args );
-
-  /*
    * Add Custom Logo Support
    */
   add_theme_support('custom-logo', array(
