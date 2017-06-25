@@ -37,11 +37,10 @@
       <?php echo get_the_tag_list(); ?>
     </div>
 
-    <hr />
+    <hr>
 
     <?php
       get_template_part( 'template-parts/author-bio' );
-      get_template_part( 'template-parts/share' );
 
       get_template_part( 'template-parts/post-navigation' );
 

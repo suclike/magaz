@@ -7,7 +7,7 @@
 
           <div class='column small-8 medium-3 large-3'>
             <?php if ( function_exists( 'the_custom_logo' ) && has_custom_logo() ) : ?>
-              <?php the_custom_logo() ?>
+              <?php the_custom_logo(); ?>
             <?php else: ?>
               <h1 class='site-header__logo'>
                 <a href='<?php echo esc_url( home_url( '/' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a>

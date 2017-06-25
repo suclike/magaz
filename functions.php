@@ -28,17 +28,6 @@ function magaz_setup() {
   add_theme_support( 'automatic-feed-links' );
 
   /*
-   * Add Custom Header Support
-   */
-  $args = array(
-    'flex-width'    => true,
-    'flex-height'   => true,
-    'default-image' => '',
-  );
-
-  add_theme_support( 'custom-header', $args );
-
-  /*
    * Add Custom Logo Support
    */
   add_theme_support('custom-logo', array(
@@ -73,23 +62,9 @@ function magaz_setup() {
    * to output valid HTML5.
    */
   add_theme_support( 'html5', array(
-    'search-form',
-    'comment-form',
     'comment-list',
     'gallery',
     'caption',
-  ) );
-
-  /*
-   * Enable support for Post Formats.
-   * See https://developer.wordpress.org/themes/functionality/post-formats/
-   */
-  add_theme_support( 'post-formats', array(
-    'aside',
-    'image',
-    'video',
-    'quote',
-    'link',
   ) );
 
   // Set up the WordPress core custom background feature.
@@ -116,7 +91,7 @@ function magaz_setup() {
       $category_image = category_image_src( array( 'size' => 'full' ) , false );
     }
 
-    echo $category_image;
+    echo esc_url( $category_image );
   }
 
   /**
@@ -273,13 +248,6 @@ function magaz_setup() {
 
     wp_reset_postdata();
   }
-
-  /**
-   * Returns the title escaped, to be used in the share URLs
-   */
-  function magaz_get_escaped_title() {
-    echo htmlspecialchars( urlencode( html_entity_decode( get_the_title() . ' - ' ) ) );
-  }
 }
 endif;
 add_action( 'after_setup_theme', 'magaz_setup' );
@@ -366,11 +334,9 @@ function magaz_fonts_url() {
 function magaz_scripts() {
   wp_enqueue_style( 'magaz-fonts', magaz_fonts_url(), array(), '1.0.0' );
 
-  wp_enqueue_script( 'magaz-evil-icons-script', get_template_directory_uri() . '/js/scripts/evil-icons.min.js', array(), '20120206', false );
-
   wp_enqueue_style( 'magaz-style', get_stylesheet_uri() );
 
-  wp_enqueue_script( 'magaz-main-script', get_template_directory_uri() . '/js/app.min.js', array(), '20120206', true );
+  wp_enqueue_script( 'magaz-main-script', get_template_directory_uri() . '/js/app.js', array( 'jquery' ), '1.0.0', true );
 
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
