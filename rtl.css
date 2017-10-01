@@ -627,7 +627,6 @@ dl dd {
 a {
   color: #222222;
   text-decoration: none;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -1589,6 +1588,15 @@ a.custom {
   content: "\f213";
 }
 
+.social-icons a[href*="vk.com"]:before {
+  content: "";
+  width: 20px;
+  margin-right: 5px;
+  vertical-align: text-top;
+  background-image: url("fonts/vk.svg");
+  background-repeat: no-repeat;
+}
+
 /*--------------------------------------------------------------
 4.0 Elements
 --------------------------------------------------------------*/
@@ -1615,7 +1623,6 @@ select {
   letter-spacing: 1px;
   background: transparent;
   border-radius: 0;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -1681,7 +1688,6 @@ select:focus {
   text-decoration: none;
   color: #fff;
   background-color: #222222;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -2159,7 +2165,6 @@ p code {
   left: 0;
   right: auto;
   font-size: 12px;
-  -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 
@@ -2376,7 +2381,6 @@ input[type='search'].search-field {
     top: 0;
     bottom: 64px;
     width: 1px;
-    background: -webkit-linear-gradient(-45deg, #DADFE1 25%, transparent 25%), -webkit-linear-gradient(-135deg, #DADFE1 25%, transparent 25%), -webkit-linear-gradient(-45deg, transparent 75%, #DADFE1 75%), -webkit-linear-gradient(-135deg, transparent 75%, #DADFE1 75%);
     background: linear-gradient(-45deg, #DADFE1 25%, transparent 25%), linear-gradient(45deg, #DADFE1 25%, transparent 25%), linear-gradient(-45deg, transparent 75%, #DADFE1 75%), linear-gradient(45deg, transparent 75%, #DADFE1 75%);
     background-size: 2px 2px;
     background-position: 100% 0, 1px 0, 1px -1px, 0px 1px;
@@ -2405,7 +2409,6 @@ input[type='search'].search-field {
 
 .post-card__image {
   margin-bottom: 16px;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -2427,7 +2430,6 @@ input[type='search'].search-field {
 .post-card__title a {
   display: block;
   border-bottom: none;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -2508,7 +2510,6 @@ input[type='search'].search-field {
 }
 
 [data-class="post--first"] .post-card__image:after {
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   position: absolute;
   top: 0;
@@ -2862,7 +2863,6 @@ input[type='search'].search-field {
     width: 228px;
     text-align: right;
     background-color: #fff;
-    -webkit-transition: opacity 0.4s;
     transition: opacity 0.4s;
   }
   .no-header-cover .site-header__navigation .sub-menu {
@@ -2903,7 +2903,6 @@ input[type='search'].search-field {
   text-decoration: none;
   font-weight: 300;
   letter-spacing: 1px;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -2985,7 +2984,6 @@ input[type='search'].search-field {
   line-height: 25px;
   text-transform: uppercase;
   letter-spacing: .2em;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -3196,7 +3194,6 @@ img {
   color: #fff;
   font-size: 12px;
   background-color: rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -3273,7 +3270,6 @@ img {
 }
 
 .site-header__logo a {
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   text-decoration: none;
   letter-spacing: 1px;
@@ -3349,13 +3345,11 @@ img {
     border-right: 1px solid #ECF0F1;
     -webkit-transform: translate3d(0, 0, 0) translateX(-250px);
             transform: translate3d(0, 0, 0) translateX(-250px);
-    -webkit-transition: all 0.4s cubic-bezier(0.16, 0.63, 0.45, 0.98) 0s;
     transition: all 0.4s cubic-bezier(0.16, 0.63, 0.45, 0.98) 0s;
   }
   .off-canvas-container {
     -webkit-transform: translate3d(0, 0, 0) translateX(0);
             transform: translate3d(0, 0, 0) translateX(0);
-    -webkit-transition: all 0.4s cubic-bezier(0.16, 0.63, 0.45, 0.98) 0s;
     transition: all 0.4s cubic-bezier(0.16, 0.63, 0.45, 0.98) 0s;
   }
   .off-canvas-container.is-active {
@@ -3555,7 +3549,6 @@ img {
   color: #7E7E7E;
   border: 1px solid #ECF0F1;
   text-decoration: none;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -3597,7 +3590,6 @@ img {
   color: #fff;
   font-size: 19px;
   vertical-align: middle;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -3629,7 +3621,6 @@ img {
   background: rgba(255, 255, 255, 0.99);
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   -webkit-transform: translate(0px, -100%) scale(0, 0);
           transform: translate(0px, -100%) scale(0, 0);
@@ -3640,7 +3631,6 @@ img {
   top: 32px;
   left: 32px;
   cursor: pointer;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   fill: #222222;
 }

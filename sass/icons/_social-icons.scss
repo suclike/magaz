@@ -125,4 +125,13 @@
   a[href*="youtube.com"]:before {
     content: "\f213";
   }
+
+  a[href*="vk.com"]:before {
+    content: "";
+    width: 20px;
+    margin-left: 5px;
+    vertical-align: text-top;
+    background-image: url('fonts/vk.svg');
+    background-repeat: no-repeat;
+  }
 }
