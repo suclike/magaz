@@ -1,6 +1,6 @@
 === Magaz ===
 Contributors: aspirethemes
-Version: 1.1.2
+Version: 1.1.4
 Requires at least: WordPress 4.5
 Tags: one-column, featured-images, blog
 License: GNU General Public License v2 or later
@@ -12,6 +12,9 @@ Magazine/News Minimal WordPress Theme.
 Magaz is a modern, clean, minimal, content and image focus theme for WordPress. Magaz is created for those who want to create a minimal and beautiful online magazine, news website, or personal blog that focus on the content and to show images in a beautiful and elegant way. Magaz it is 100% responsive, that means it fits with all different kind of devices in different sizes. Documentation page: https://aspirethemes.com/docs/magaz-wordpress/.
 
 == Changelog ==
+
+= 1.1.4 =
+* Added support for VK icon
 
 = 1.1.3 =
 * First Release
